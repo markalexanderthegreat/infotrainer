@@ -1,2 +1,2 @@
-# infotrainer
-Üben von Informatik Aufgaben
+# Infotrainer
+Informatik Aufgaben üben
