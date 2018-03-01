@@ -2,7 +2,7 @@
 Neue Funktion mit Abkürzung in Klammern an die Liste
 eingaben anhängen '''
 eingaben = []
-eingaben.append('summe(sum)')
+eingaben.append('collatz(col)')
 
 def help_():
     print('Verfügbare Kommandos (Abkürzung in Klammern):')
