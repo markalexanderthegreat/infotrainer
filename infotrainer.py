@@ -2,7 +2,7 @@
 Neue Funktion mit Abkürzung in Klammern an die Liste
 eingaben anhängen '''
 eingaben = []
-eingaben.append('beispiel(bei)')  # für jede Anwendung eine Zeile
+eingaben.append('summe(sum)')  # für jede Anwendung eine Zeile
 
 def help_():
     print('Verfügbare Kommandos (Abkürzung in Klammern):')
