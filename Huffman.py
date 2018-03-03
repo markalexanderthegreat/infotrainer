@@ -17,12 +17,12 @@ def Huffman_ui():
         richtig_bshk += ', '
     richtig_bshk = richtig_bshk[:-2]
     bshk = input('Buchstabenhäufigkeiten:\n')
-    if not bshk == richtig_bshk:
-        print('Falsche Eingabe!')
-        print('Erwartet wäre:')
-        print(richtig_bshk)
-    else:
-        print('Richtig')
+    #if not bshk == richtig_bshk:
+    #    print('Falsche Eingabe!')
+    #    print('Erwartet wäre:')
+    print(richtig_bshk)
+    #else:
+    #    print('Richtig')
     print()
     print('Beichspiele:')
     print('Nächster merge: a, b mit 2')
@@ -48,12 +48,12 @@ def Huffman_ui():
         new_Branch = Branch(links, rechts)
         buchstaben.append(new_Branch)
         richtig_next_merge = links.zeichen + ', ' + rechts.zeichen + ' mit ' + str(links.nummer+rechts.nummer)
-        if not richtig_next_merge == next_merge:
-            print('Falsche Eingabe')
-            print('Erwartet:')
-            print(richtig_next_merge)
-        else:
-            print('Richtig')
+        #if not richtig_next_merge == next_merge:
+        #    print('Falsche Eingabe')
+        #    print('Erwartet:')
+        print(richtig_next_merge)
+        #else:
+        #    print('Richtig')
     buchstaben[0].encoding('')
     buchstaben_raw.sort(key=operator.attrgetter('code'))
     right_encodings = ''
@@ -61,12 +61,12 @@ def Huffman_ui():
         right_encodings += each.zeichen + ' = ' + each.code + ', '
     right_encodings = right_encodings[:-2]
     encodings = input('Codierungen:(links nach rechts)\n')
-    if not encodings == right_encodings:
-        print('Falsche Eingabe!')
-        print('Erwartet:')
-        print(right_encodings)
-    else:
-        print('Richtig')
+    #if not encodings == right_encodings:
+    #    print('Falsche Eingabe!')
+    #    print('Erwartet:')
+    print(right_encodings)
+    #else:
+    #    print('Richtig')
     richtig_binaer = ''
     for i in string:
         if i.isalpha():
@@ -74,12 +74,13 @@ def Huffman_ui():
                 if i.lower() == u.zeichen:
                     richtig_binaer += u.code
     binaer = input('Verschlüsseltes Wort?\n')
-    if not binaer == richtig_binaer:
-        print('Falsche Eingabe!')
-        print('Erwartet:')
-        print(richtig_binaer)
-    else:
-        print('Richtig')
+    #if not binaer == richtig_binaer:
+    #    print('Falsche Eingabe!')
+    #    print('Erwartet:')
+    print(richtig_binaer)
+    #else:
+    #    print('Richtig')
+
 class Buchstabe():
     def __init__(self, char, nummer):
         self.nummer = nummer

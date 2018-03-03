@@ -1,8 +1,10 @@
-'''
+"""
 Neue Funktion mit Abkürzung in Klammern an die Liste
-eingaben anhängen '''
+eingaben anhängen
+"""
 eingaben = []
 eingaben.append('summe(sum)')  # für jede Anwendung eine Zeile
+eingaben.append('Huffman')
 
 def help_():
     print('Verfügbare Kommandos (Abkürzung in Klammern):')
