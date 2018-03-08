@@ -2,8 +2,7 @@
 Neue Funktion mit Abkürzung in Klammern an die Liste
 eingaben anhängen
 """
-eingaben = []
-eingaben.append('summe(sum)')  # für jede Anwendung eine Zeile
+eingaben = []   # für jede Anwendung ein append
 eingaben.append('Huffman')
 
 def help_():
