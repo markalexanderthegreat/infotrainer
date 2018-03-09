@@ -4,6 +4,7 @@ eingaben anhängen
 """
 eingaben = []   # für jede Anwendung ein append
 eingaben.append('Huffman')
+eingaben.append('rückrechnung_8bit_zweierkomplement')
 
 def help_():
     print('Verfügbare Kommandos (Abkürzung in Klammern):')
