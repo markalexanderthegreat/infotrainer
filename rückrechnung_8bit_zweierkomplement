@@ -1,0 +1,25 @@
+import random
+
+def rückrechnung_8bit_zweierkomplement_ui():
+    Dezzahl = getZahl()
+    Binzahl = convertZahl(Dezzahl)
+    print("""Berechne nach dem Verfahren aus dem Unterricht, welche Zahl
+durch die 8 Bit Zweierkomplement Darstellung codiert wird:""", Binzahl)
+    erg = int(input())
+    if erg == Dezzahl:
+        print("Dein Ergebnis ist korrekt.")
+    else:
+        print("Dein Ergebnis ist falsch. Gesucht war:", Dezzahl)
+
+def getZahl():
+    return random.randint(-128, -1)
+
+def convertZahl(Num):
+    Num2 = Num + 256
+    return dez_in_bin(Num2)
+
+def dez_in_bin(x):
+    ''' Zahl als Eingabe gefordert '''
+    if x == 0: return ""
+    if x%2 == 1: return dez_in_bin(x//2) + "1"
+    return dez_in_bin(x//2) + "0"
